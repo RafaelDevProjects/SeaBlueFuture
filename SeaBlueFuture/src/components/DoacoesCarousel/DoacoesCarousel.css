@@ -10,7 +10,7 @@
 }
 
 .partner-image {
-    max-width: 60%;
+    max-width: 40%;
     height: auto;
     margin: 0 auto;
     background-color: #fff;
@@ -20,10 +20,16 @@
 
 .partner-info {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .partner-info p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    max-width: 50%;
+    text-align: center;
 }
 
 .donate-button {
@@ -49,6 +55,11 @@
 
     .partner-info p{
         font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .partner-image {
+        max-width: 100%;
     }
     .doacoes-carousel-container{
         width: 100%;

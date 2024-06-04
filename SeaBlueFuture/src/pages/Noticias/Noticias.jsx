@@ -13,16 +13,14 @@ const Noticias = () => {
     useEffect(() => {
         const fetchNoticias = async () => {
             try {
-                const response = await axios.get('https://newsapi.org/v2/top-headlines', {
+                const response = await axios.get('http://servicodados.ibge.gov.br/api/v3/noticias/', {
                     params: {
-                        apiKey: "0c20ce5ab407490cafc5e6640dd77bd9",
-                        country: "",
-                        category: 'science',
-                        q: "sea"
+                        tipo: 'noticia',
+                        busca: 'poluição'
                     }
                 });
-                console.log(response)
-                setNoticias(response.data.articles);
+                console.log(response);
+                setNoticias(response.data.items); // Adaptar conforme a estrutura da resposta da API
             } catch (error) {
                 console.error('Erro ao carregar as notícias:', error);
             }
@@ -34,11 +32,11 @@ const Noticias = () => {
     return (
         <div>
             <Hero videoSrc={noticiasVideo}>
-                <h1>Últimas Noticias</h1>
-                <p>fique atualizado com as últimas notícias e eventos em nossa comunidade.</p>
+                <h1>Últimas Notícias</h1>
+                <p>Fique atualizado com as últimas notícias e eventos em nossa comunidade.</p>
             </Hero>
             <div className='container-noticias'>
-                <h1>Notícias sobre Clima e Oceano</h1>
+                <h1>Notícias sobre a água e o meio ambiente</h1>
                 {noticias.map((noticia, index) => (
                     <Noticia key={index} noticia={noticia} />
                 ))}
