@@ -4,8 +4,8 @@ Este projeto consiste em uma aplicação web desenvolvida com React no front-end
 
 ## Pré-requisitos
 
-- Node.js (v14 ou superior)
-- Python (v3.7 ou superior)
+- Node.js (v20.12.2 ou superior)
+- Python (v3.12.3 our superior)
 
 ## Configuração do Ambiente
 
