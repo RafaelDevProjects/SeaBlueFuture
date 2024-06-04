@@ -1,0 +1,20 @@
+.container-noticias{
+    margin: 100px;
+}
+
+.container-noticias h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container-noticias{
+        margin: 10px;
+    }
+    .container-noticias h1{
+        font-size: 2rem;
+    }
+}

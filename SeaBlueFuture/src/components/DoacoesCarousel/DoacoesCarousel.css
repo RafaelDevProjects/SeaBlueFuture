@@ -1,0 +1,56 @@
+.doacoes-carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+.partner-slide {
+    text-align: center;
+}
+
+.partner-image {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.partner-info {
+    margin-top: 20px;
+}
+
+.partner-info p{
+    font-size: 1.5rem;
+}
+
+.donate-button {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3994c8;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donate-button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+    .partner-slide {
+        padding: 0 10px;
+    }
+
+    .partner-info p{
+        font-size: 1rem;
+    }
+    .doacoes-carousel-container{
+        width: 100%;
+    }
+}
