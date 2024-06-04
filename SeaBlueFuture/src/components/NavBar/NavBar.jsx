@@ -14,8 +14,8 @@ const Navbar = () => {
         <>
             <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-            <nav className="nav-wrapper">
-                <div className="nav-content">
+            <nav className="nav-wrappere">
+                <div className="nav-contente">
                     <img className="logo" src={"src/assets/images/logo.png"} alt="Logo" />
 
                     <ul>

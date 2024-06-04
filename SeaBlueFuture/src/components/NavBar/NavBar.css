@@ -1,5 +1,5 @@
 
-.nav-wrapper {
+.nav-wrappere {
     background: rgba(0, 0, 0, 0.1);
     padding: 0.5rem 0;
     position: sticky;
@@ -8,7 +8,7 @@
     backdrop-filter: blur(50px);
 }
 
-.nav-content {
+.nav-contente {
     max-width: 1300px;
     display: flex;
     align-items: center;
@@ -22,14 +22,14 @@
     height: auto;   
 }
 
-.nav-content ul {
+.nav-contente ul {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     list-style: none;
 }
 
-.nav-content li {
+.nav-contente li {
     margin: 0 1.5rem;
 }
 
@@ -99,13 +99,13 @@
         display: block;
     }
 
-    .nav-content ul{
+    .nav-contente ul{
         display: none;
     }
 }
 
 @media (max-width: 1325px){
-    .nav-wrapper {
+    .nav-wrappere {
         padding: 0 2rem;
     }
 }

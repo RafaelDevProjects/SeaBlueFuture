@@ -1,0 +1,24 @@
+.email-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* Ajustar conforme a altura do Hero */
+    padding: 20px;
+    text-align: center; /* Centraliza o texto em telas menores */
+  }
+  
+  @media (max-width: 768px) {
+    .email-input {
+      height: auto;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .email-input {
+      height: auto;
+      padding: 15px;
+    }
+  }
+  

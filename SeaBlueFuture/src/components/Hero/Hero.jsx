@@ -8,7 +8,7 @@ const Hero = ({ videoSrc, children }) => {
                 <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div className="hero-content">
+            <div className="hero-contentee">
                 {children}
             </div>
         </div>

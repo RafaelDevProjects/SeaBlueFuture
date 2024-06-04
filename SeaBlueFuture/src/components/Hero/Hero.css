@@ -17,7 +17,7 @@
     z-index: -1;
 }
 
-.hero-content {
+.hero-contentee {
     position: relative;
     z-index: 1;
     color: white;  /* Cor do texto para contraste */
@@ -37,11 +37,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .hero-content h1 {
+    .hero-contentee h1 {
         font-size: 2rem; /* Tamanho menor da fonte para telas menores */
     }
 
-    .hero-content p {
+    .hero-contentee p {
         font-size: 1rem; /* Tamanho menor da fonte para telas menores */
     }
 }

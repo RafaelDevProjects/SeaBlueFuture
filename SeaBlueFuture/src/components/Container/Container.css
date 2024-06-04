@@ -1,4 +1,4 @@
-.container{
+.container-sobre{
     display: flex;
     align-items: center;
     padding: 54px 5%;
@@ -48,7 +48,7 @@
       padding: 0 20px;
       order: 1;
     }
-    .container{
+    .container-sobre{
         flex-direction: column;
     }
     .sobre-text h3{

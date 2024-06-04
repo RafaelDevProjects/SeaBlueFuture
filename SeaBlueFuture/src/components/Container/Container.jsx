@@ -12,7 +12,7 @@ function Container({ titulo, texto, path, index}) {
       <img src={path} alt={titulo} style={{ borderRadius: '10px'}} />
   }
   return (
-    <div className="container">
+    <div className="container-sobre">
       <div className="sobre-img">
         {divContainer}
       </div>
