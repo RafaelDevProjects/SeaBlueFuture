@@ -46,9 +46,7 @@ Este projeto consiste em uma aplicação web desenvolvida com React no front-end
     npm run dev
     ```
 
-3. Acesse a aplicação no seu navegador em `http://localhost:3000`.
-
 ## Observações
 
-- Certifique-se de que as portas `3000` (front-end) e `5000` (back-end) não estejam sendo usadas por outros processos em sua máquina.
+- Certifique-se de que a portas`5000` (back-end) não estejam sendo usadas por outros processos em sua máquina.
 
