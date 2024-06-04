@@ -4,7 +4,7 @@ import homeVideo from '../../assets/videos/video_ocean.mp4';
 import sobreImg from "../../assets/images/foto_sobre.jpg";
 import Container from "../../components/Container/Container";
 import EmailInput from '../../components/EmailInput/EmailInput';
-import './Home.css';
+import './Home.scss';
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       </Hero>
       <Container
         titulo='Sobre'
-        texto='O SeaBlueOcean é mais do que apenas um site; é uma plataforma de conscientização, mobilização e ação em prol da preservação dos oceanos e do meio ambiente. Nossa missão é fornecer informações relevantes e impactantes sobre questões climáticas e oceânicas, destacando notícias importantes e tendências preocupantes, como enchentes, derretimento de geleiras e poluição por microplásticos. Através do nosso portal online, buscamos engajar e capacitar indivíduos a se tornarem agentes de mudança em suas comunidades.'
+        texto='O SeaBlueFuture é mais do que apenas um site; é uma plataforma de conscientização, mobilização e ação em prol da preservação dos oceanos e do meio ambiente. Nossa missão é fornecer informações relevantes e impactantes sobre questões climáticas e oceânicas, destacando notícias importantes e tendências preocupantes, como enchentes, derretimento de geleiras e poluição por microplásticos. Através do nosso portal online, buscamos engajar e capacitar indivíduos a se tornarem agentes de mudança em suas comunidades.'
         path={sobreImg}
         index={2}
         className="container"

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './EmailInput.css';
+import './EmailInput.scss';
 
 const EmailInput = () => {
   const [email, setEmail] = useState('');
@@ -67,7 +67,7 @@ const EmailInput = () => {
             onChange={handleCheckboxChange}
           />
           <label className="form-check-label" htmlFor="acceptEmails">
-            Aceito receber e-mails do SeaBlueOcean
+            Aceito receber e-mails do SeaBlueFuture
           </label>
         </div>
         <button onClick={handleSubmit} className="btn btn-primary mt-3">

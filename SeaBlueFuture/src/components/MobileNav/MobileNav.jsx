@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './MobileNav.css';
+import './MobileNav.scss';
 
 export const MobileNav = ({ isOpen, toggleMenu }) => {
   return (

@@ -3,7 +3,7 @@ import noticiasVideo from '../../assets/videos/video_noticias.mp4';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Noticia from '../../components/Noticia/Noticia';
-import './Noticias.css'
+import './Noticias.scss'
 
 
 

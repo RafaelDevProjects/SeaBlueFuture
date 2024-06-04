@@ -1,3 +1,4 @@
+@import '../../styles/styles.scss';
 
 .nav-wrappere {
     background: rgba(0, 0, 0, 0.1);
@@ -37,7 +38,7 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
-    color: #3994C8;
+    color: $color-ciano;
     position: relative;
     cursor: pointer;
 }
@@ -74,7 +75,7 @@
     border: none;
     border-radius: 0.4rem;
     color: #fff;
-    background: linear-gradient(90deg, #a993fe -0.13%, #327caa 99.87%);
+    background: $primary-gradiente;
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -83,9 +84,9 @@
 }
 
 .menu-btn:hover{
-    color: #327caa;
+    color: $color-ciano;
     background: #000;
-    border: 1px solid #327caa;
+    border: 1px solid $color-ciano;
 }
 
 @media (max-width: 425px){

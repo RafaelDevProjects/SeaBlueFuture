@@ -1,9 +1,11 @@
+@import '../../styles/styles.scss';
+
 .container-noticias{
     margin: 100px;
 }
 
 .container-noticias h1{
-    font-size: 2.5rem;
+    font-size: $font-size-title-container;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -15,6 +17,6 @@
         margin: 10px;
     }
     .container-noticias h1{
-        font-size: 2rem;
+        font-size: $font-size-title-container-responsive;
     }
 }

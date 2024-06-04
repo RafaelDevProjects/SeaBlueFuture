@@ -1,3 +1,5 @@
+@import '../../styles/styles.scss';
+
 .doacoes-carousel-container {
     width: 80%;
     margin: 0 auto;
@@ -13,7 +15,7 @@
     max-width: 40%;
     height: auto;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: $color-white;
     padding: 10px;
     border-radius: 30px;
 }
@@ -27,7 +29,7 @@
 }
 
 .partner-info p{
-    font-size: 1.2rem;
+    font-size: $font-size-paragrafos;
     max-width: 50%;
     text-align: center;
 }
@@ -36,7 +38,7 @@
     margin-top: 10px;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3994c8;
+    background-color: $color-ciano;
     color: white;
     text-decoration: none;
     border: none;
@@ -45,7 +47,7 @@
 }
 
 .donate-button:hover {
-    background-color: #45a049;
+    background-color: $color-green;
 }
 
 @media screen and (max-width: 768px) {

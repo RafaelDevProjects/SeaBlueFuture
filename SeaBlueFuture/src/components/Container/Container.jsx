@@ -1,4 +1,4 @@
-import './Container.css';
+import './Container.scss';
 
 function Container({ titulo, texto, path, index}) {
   let divContainer

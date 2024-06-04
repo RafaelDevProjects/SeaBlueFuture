@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../../components/Hero/Hero';
 import DoacoesCarousel from '../../components/DoacoesCarousel/DoacoesCarousel';
 import doacoesVideo from '../../assets/videos/video_doacoes.mp4';
-import './Doacoes.css'
+import './Doacoes.scss'
 
 const Doacoes = () => {
     return (

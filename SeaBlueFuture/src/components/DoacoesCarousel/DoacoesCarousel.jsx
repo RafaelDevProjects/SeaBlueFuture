@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './DoacoesCarousel.css';
+import './DoacoesCarousel.scss';
 import logoInstitutoPovoMar from '../../assets/images/logo_instituto_povo_mar.png';
 import logoEuApoio from '../../assets/images/logo_euapoio.png';
 import logoOceanica from '../../assets/images/logo_oceanica.png';

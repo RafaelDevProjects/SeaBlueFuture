@@ -1,5 +1,5 @@
 import React from 'react';
-import './Noticia.css'
+import './Noticia.scss'
 
 const Noticia = ({ noticia }) => {
   // Verifica se a data é inválida

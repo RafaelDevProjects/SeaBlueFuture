@@ -1,0 +1,18 @@
+@import '../../styles/styles.scss';
+
+.doacoes-carousel h2{
+    text-align: center;
+    font-size: $font-size-title-container;
+}
+
+
+@media screen and (max-width: 768px) {
+    .doacoes-carousel h2{
+        font-size: $font-size-title-container-responsive;
+    }
+
+}
+
+
+
+

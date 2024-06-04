@@ -1,3 +1,5 @@
+@import '../../styles/styles.scss';
+
 .mobile-menu{
     width: 100vw;
     height: 100vh;
@@ -17,7 +19,7 @@
 .mobile-menu-container {
     width: 60vw;
     height: 100vh;
-    background-color: #0e2330;
+    background-color: $color-nav;
     padding: 2rem;
 }
 

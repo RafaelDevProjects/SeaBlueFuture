@@ -5,7 +5,7 @@ import Noticias from './pages/Noticias/Noticias';
 import Doacoes from './pages/Doacoes/Doacoes';
 import Navbar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-
+import './App.css';
 const App = () => {
   return (
     <Router>

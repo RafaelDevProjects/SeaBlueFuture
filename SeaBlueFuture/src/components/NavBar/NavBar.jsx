@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './NavBar.css';
+import './NavBar.scss';
 import { Link } from 'react-router-dom';
 import { MobileNav } from '../MobileNav/MobileNav';
 

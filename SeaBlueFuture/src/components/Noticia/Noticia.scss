@@ -1,3 +1,5 @@
+@import '../../styles/styles.scss';
+
 .noticia {
     background-color: white;
     color: black;
@@ -14,17 +16,17 @@
   }
   
   .noticia h2 {
-    font-size: 1.5rem;
+    font-size: $font-size-litle-title;
     margin-bottom: 5px;
   }
   
   .noticia p {
-    font-size: 1rem;
+    font-size: $font-size-paragrafos-noticias;
     margin-bottom: 10px;
   }
   
   .noticia a {
-    color: #007bff;
+    color: #747d86;
     text-decoration: none;
     background-color: #3D3C7D;
     color: white;
