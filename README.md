@@ -47,9 +47,17 @@ O backend do SeaBlueFuture é construído em Flask, uma estrutura web em Python.
 
 3. Inicie o ambiente virtual Python e instale as dependências do back-end:
 
+    MAC
     ```bash
     cd Server
     source venv/bin/activate
+    pip install -r requirements.txt
+    ```
+    WINDOWS
+
+    ```bash
+    cd Server
+    .\venv\Scripts\Activate.ps1
     pip install -r requirements.txt
     ```
 
