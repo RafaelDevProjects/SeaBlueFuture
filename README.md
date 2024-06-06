@@ -24,6 +24,50 @@ Na seção de doações, os usuários podem encontrar informações sobre organi
 
 O backend do SeaBlueFuture é construído em Flask, uma estrutura web em Python. Ele inclui funcionalidades para lidar com o cadastro de e-mails, verificação de e-mails usando a API do Hunter, e um menu interativo no terminal para adicionar, atualizar, deletar e exportar e-mails.
 
+## Detalhes do Backend
+
+Nosso backend foi desenvolvido utilizando Python com o framework Flask. O Flask facilita a criação de APIs RESTful, permitindo que o front-end se comunique eficientemente com o back-end. Utilizamos SQLite para o banco de dados, que é leve e ideal para aplicações pequenas a médias.
+
+### Arquivos do Backend
+
+#### `server.py`
+
+O arquivo `server.py` é responsável por fornecer uma API para lidar com as solicitações dos usuários e interagir com o banco de dados. Utilizamos a biblioteca Flask para criar endpoints que recebem os dados do front-end, processam essas informações e retornam respostas apropriadas.
+
+- **Endpoint `/api/enviar-email`**: Recebe um e-mail do front-end, valida o e-mail utilizando a API Hunter.io e, se for válido, adiciona ao banco de dados.
+
+#### `menu.py`
+
+O `menu.py` fornece uma interface de linha de comando para gerenciar os e-mails armazenados no banco de dados. Ele permite adicionar, listar, atualizar, deletar e exportar e-mails.
+
+- **Funções principais**:
+  - `adicionar_email`: Adiciona um e-mail ao banco de dados.
+  - `listar_emails`: Lista todos os e-mails armazenados.
+  - `atualizar_email`: Atualiza um e-mail existente no banco de dados.
+  - `deletar_email`: Deleta um e-mail do banco de dados.
+  - `exportar_emails`: Exporta todos os e-mails para um arquivo JSON.
+
+#### `db.py`
+
+O `db.py` contém as funções de manipulação direta do banco de dados, como conectar ao banco, criar tabelas e executar operações CRUD.
+
+- **Funções principais**:
+  - `conectar_db`: Gerencia a conexão com o banco de dados.
+  - `criar_tabela`: Cria a tabela de e-mails se ela não existir.
+  - `adicionar_email`: Insere um novo e-mail na tabela.
+  - `listar_emails`: Retorna todos os e-mails do banco.
+  - `atualizar_email`: Atualiza um e-mail existente.
+  - `deletar_email`: Remove um e-mail do banco.
+  - `exportar_emails`: Exporta os e-mails para um arquivo JSON.
+
+### Integração Front-End e Back-End
+
+No front-end, utilizamos Axios para enviar solicitações HTTP ao nosso back-end Flask. Quando um usuário insere seu e-mail na página inicial, o Axios envia uma solicitação POST para o endpoint `/api/enviar-email`, onde o e-mail é validado e, se for válido, armazenado no banco de dados.
+
+### API Hunter.io
+
+A API Hunter.io é utilizada para validar os endereços de e-mail antes de armazená-los no banco de dados. Esta API verifica se o e-mail é entregue, se é arriscado ou inválido. Isso garante que somente e-mails válidos sejam armazenados e utilizados para futuras comunicações.
+
 ## Pré-requisitos
 
 - Node.js (v20.12.2 ou superior)
@@ -34,7 +78,7 @@ O backend do SeaBlueFuture é construído em Flask, uma estrutura web em Python.
 1. Clone este repositório para o seu ambiente local:
 
     ```bash
-    git clone <URL_DO_REPOSITORIO>
+    git clone <https://github.com/RafaelDevProjects/SeaBlueFuture.git>
     cd SeaBlueFuture
     ```
 
@@ -47,13 +91,15 @@ O backend do SeaBlueFuture é construído em Flask, uma estrutura web em Python.
 
 3. Inicie o ambiente virtual Python e instale as dependências do back-end:
 
-    MAC
+    Para Mac:
+
     ```bash
     cd Server
     source venv/bin/activate
     pip install -r requirements.txt
     ```
-    WINDOWS
+
+    Para Windows:
 
     ```bash
     cd Server
@@ -61,28 +107,56 @@ O backend do SeaBlueFuture é construído em Flask, uma estrutura web em Python.
     pip install -r requirements.txt
     ```
 
+
 ## Executando o Projeto
 
-1. Inicialize o servidor back-end:
+1. Inicie o servidor back-end:
+
+    Para Mac:
 
     ```bash
     cd Server
+    source venv/bin/activate
     python server.py
     ```
 
-2. Inicialize o servidor front-end:
+    Para Windows:
+
+    ```bash
+    cd Server
+    .\venv\Scripts\Activate.ps1
+    python server.py
+    ```
+
+2. Em outro terminal, inicialize o servidor front-end:
 
     ```bash
     cd SeaBlueFuture
     npm run dev
     ```
 
-## Observações
+3. Para utilizar o menu do backend para gerenciar os e-mails, abra um novo terminal e execute:
 
-- Certifique-se de que a portas `5000` (back-end) não estejam sendo usadas por outros processos em sua máquina.
+    Para Mac:
+
+    ```bash
+    cd Server
+    source venv/bin/activate
+    python menu.py
+    ```
+
+    Para Windows:
+
+    ```bash
+    cd Server
+    .\venv\Scripts\Activate.ps1
+    python menu.py
+    ```
+
+Certifique-se de que a porta `5000` (back-end) não esteja sendo usada por outros processos em sua máquina.
+
 
 ## Participantes
 
-- [Nome do Participante 1](https://github.com/participante1)
-- [Nome do Participante 2](https://github.com/participante2)
-- [Nome do Participante 3](https://github.com/participante3)
+- Rafael De Almeida Sigoli (RM554019)
+- Lucas Bertolassi Iori (RM554019)
