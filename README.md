@@ -159,4 +159,4 @@ Certifique-se de que a porta `5000` (back-end) não esteja sendo usada por outro
 ## Participantes
 
 - Rafael De Almeida Sigoli (RM554019)
-- Lucas Bertolassi Iori (RM554019)
+- Lucas Calsolari (553678)
